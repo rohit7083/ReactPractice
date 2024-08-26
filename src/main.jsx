@@ -8,6 +8,7 @@ import Home from './P5ReactRouter/Home.jsx'
 import About from './P5ReactRouter/About.jsx'
 import Contact from './P5ReactRouter/Contact.jsx'
 import User from './P5ReactRouter/User.jsx'
+import Github, { githubInfoLoader } from './P5ReactRouter/Github.jsx'
 // this is 1 way 
 
 // const router= createBrowserRouter([
@@ -41,6 +42,8 @@ const router=createBrowserRouter(
       <Route path='' element={<Home/>}/>
       <Route path='about' element={<About/>}/>
       <Route path='contact' element={<Contact/>}/>
+      <Route path='github' loader={githubInfoLoader} element={<Github/>}/>
+
       <Route path='user/:userid' element={<User/>}/>
 
 
